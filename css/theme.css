@@ -45,7 +45,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     height: 20px;
-    width: 20px;
+    width: 22px;
     padding: 15px 15px;
     z-index: 3;
 }
@@ -55,30 +55,21 @@ nav {
     display: block;
     height: 2px;
     width: 100%;
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
 }
 
-/* .nav-toggle-label span:first-child {
-    transform-origin: top;
-} */
-
-/* .nav-toggle-label span:last-child {
-    transform-origin: bottom;
-}
-
+/* Rotate first bar */
 #nav-toggle:checked + .nav-toggle-label span:first-child {
-    transform: rotate(45deg);
-    top: 11px;
+    transform: translate(0, 9px) rotate(-45deg);
 }
 
-#nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
-    opacity: 0;
-}
+/* Fade out the second bar */
+#nav-toggle:checked + .nav-toggle-label span:nth-child(2) {opacity: 0;}
 
+/* Rotate last bar */
 #nav-toggle:checked + .nav-toggle-label span:last-child {
-    transform: rotate(-45deg);
-    bottom: 11px;
-} */
+    transform: translate(0, -9px) rotate(45deg);
+}
 
 .nav-menu {
     display: flex;
