@@ -1,22 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,600;0,700;1,600;1,700&family=Hind+Vadodara:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;0,1000;1,200;1,300;1,400;1,500;1,1000&family=Sumana:wght@400;700&display=swap');
+
+/* Color Scheme:
+*  #E63946  Red
+*  #F1FAEE  Off-White
+*  #A8DADC  IDK Dusty
+*  #457B9D  Dusty Blue
+*  #1D3557  Dark Blue
+*/
 
 * {
     margin: 0;
-    font-family: 'Hind Vadodara', sans-serif;
+    font-family: 'Cambay', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
     box-sizing: border-box;
 }
 
 h1 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
-    font-size: 5.3em;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    font-style: oblique;
+    font-size: 4.3rem;
+    line-height: 100%;
 }
 
 h2 {
-    font-family: 'Crimson Text', serif;
-    font-style: oblique;
-    font-weight: 700;
-    font-size: 2.3em;
+    font-family: 'Sumana', serif;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 100%;
 }
 
 /* ================== NAVIGATION BAR =================== */
@@ -50,16 +62,27 @@ nav {
     z-index: 3;
 }
 
+.nav-toggle-label span:first-child {
+    height: 2.2px;
+    border-radius: 1.1px;
+}
+
+.nav-toggle-label:hover span {
+    background-color: #1D3557;
+}
+
 .nav-toggle-label span {
-    background-color: whitesmoke;
+    background-color: #457B9D;
     display: block;
     height: 2px;
+    border-radius: 1px;
     width: 100%;
     transition: all 0.4s ease;
 }
 
 /* Rotate first bar */
 #nav-toggle:checked + .nav-toggle-label span:first-child {
+    height: 2px;
     transform: translate(0, 9px) rotate(-45deg);
 }
 
@@ -80,7 +103,7 @@ nav {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 500;
     font-size: 1.3em;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgb(168, 218, 220, 0.4);
     margin: 0;
     padding-left: 50px;
     position: absolute;
@@ -90,6 +113,7 @@ nav {
     height: 50px;
     transform: translateX(-100%);
     transition: transform 0.4s ease;
+    box-shadow: 0 0px 5px 2px rgb(168, 218, 220, 0.4);
 }
 
 #nav-toggle:checked ~ .nav-menu {
@@ -101,15 +125,19 @@ nav {
 }
 
 .nav-menu a {
-    color: white;
+    color: #457B9D;
     display: block;
     padding: 10px;
+    margin: 0 2px;
     text-decoration: none;
+    border-radius: 6px;
     transition: all 0.2s ease;
 }
 
 .nav-menu a:hover {
-    background-color: rgba(119, 117, 117, 0.7);
+    background-color: rgba(69, 123, 157, 0.7);
+    box-shadow: 0 0px 5px 2px rgba(69, 123, 157, 0.4);
+    color: #F1FAEE;
 }
 
 /* ========================= HERO ========================= */
@@ -143,8 +171,8 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    background-color: black;
-    color: white;
+    background-color: #1D3557;
+    color: #A8DADC;
     font-weight: 300;
 }
 
@@ -156,13 +184,13 @@ footer {
 
 .contact-links a {
     text-decoration: none;
-    color: white;
+    color: #A8DADC;
     margin: 0 0.3rem;
     transition: all 0.4ms ease;
 }
 
 .contact-links a:hover {
-    color: lightskyblue;
-    font-size: 1.2rem;
-    margin: 0 0.5rem;
+    color: #F1FAEE;
+    /* font-size: 1.2rem; */
+    /* margin: 0 0.5rem; */
 }
