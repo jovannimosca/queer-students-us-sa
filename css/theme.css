@@ -2,6 +2,7 @@
 
 /* Color Scheme:
 *  #E63946  Red
+*  #FE7F2D  Pumpkin
 *  #F1FAEE  Off-White
 *  #A8DADC  IDK Dusty
 *  #457B9D  Dusty Blue
@@ -14,6 +15,14 @@
     font-weight: 400;
     font-size: 18px;
     box-sizing: border-box;
+}
+
+main {
+    background-color: #F1FAEE;
+}
+
+strong {
+    font-weight: 700;
 }
 
 h1 {
@@ -139,31 +148,6 @@ nav {
     box-shadow: 0 0px 5px 2px rgba(69, 123, 157, 0.4);
     color: #F1FAEE;
 }
-
-/* ========================= HERO ========================= */
-.hero {
-    position: relative;
-    height: 80vh;
-    width: 100%;
-}
-
-.cover-img {
-    object-fit: cover;
-    width: 100%;
-    height: 80vh;
-}
-
-.hero-content {
-    box-sizing: border-box;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    z-index: 2;
-    padding: 10px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
 
 /* ====================== FOOTER ======================= */
 footer {
