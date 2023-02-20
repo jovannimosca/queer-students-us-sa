@@ -178,3 +178,8 @@ footer {
     /* font-size: 1.2rem; */
     /* margin: 0 0.5rem; */
 }
+
+footer .attribution {
+    font-size: 10pt;
+    color: #A8DADC;
+}
