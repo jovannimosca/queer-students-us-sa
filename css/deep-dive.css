@@ -39,6 +39,12 @@
     color: #1D3557;
 }
 
+@media screen and (max-width: 100vh) {
+    .intro {
+        padding: 60px max(10vh, 10vw) 2rem;
+    }
+}
+
 /* ============================== INFO CARDS =============================== */
 
 .info-card {
@@ -80,4 +86,18 @@
 
 .card-contents a {
     font-size: 1.1rem;
+}
+
+@media screen and (max-width: 100vh) {
+    .info-card {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 min(15vh, 15vw);
+    }
+
+    .card-heading {
+        width: 100%;
+        height: auto;
+        min-height: 50vh;
+    }
 }

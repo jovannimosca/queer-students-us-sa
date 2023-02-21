@@ -18,9 +18,9 @@
 .hero-content {
     box-sizing: border-box;
     position: absolute;
-    top: 40vh;
+    bottom: 10vh;
     left: 5vw;
-    width: 40vw;
+    width: 50vw;
     z-index: 2;
     color: #1D3557;
 }
@@ -30,9 +30,20 @@
     font-weight: 400;
 }
 
+@media screen and (max-width: 100vh) {
+    .hero-content {
+        text-align: center;
+        width: 90vw;
+        background-color: rgba(168, 218, 220, 0.3);
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+}
+
 /* ====================== COMPARISON ====================== */
 .split-summary {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     color: #1D3557;
     /* box-shadow: 0 0 8rem rgba(69, 123, 157, 0.4) inset; */
@@ -47,6 +58,7 @@
     align-items: center;
     /* justify-content: center; */
     /* border: solid; */
+    min-width: 30rem;
     background-color: #A8DADC;
     border-radius: min(5vh, 5vw);
     box-shadow: 0 0 4rem rgba(69, 123, 157, 0.2);
@@ -90,4 +102,18 @@
 
 .comparison li {
     margin: 0.8rem  0 0 1.8rem;
+}
+
+@media screen and (max-width: 100vh) {
+    .country-card {
+        margin: 3rem;
+    }
+
+    .comparison {
+        padding: 3rem;
+    }
+
+    .comparison h2 {
+        text-align: center;
+    }
 }

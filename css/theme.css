@@ -112,7 +112,7 @@ nav {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 500;
     font-size: 1.3em;
-    background-color: rgb(168, 218, 220, 0.4);
+    background-color: rgba(168, 218, 220, 0.4);
     margin: 0;
     padding-left: 50px;
     position: absolute;
@@ -120,7 +120,7 @@ nav {
     left: 0;
     width: 100%;
     height: 50px;
-    transform: translateX(-100%);
+    transform: translateX(-200vw);
     transition: transform 0.4s ease;
     box-shadow: 0 0px 5px 2px rgb(168, 218, 220, 0.4);
 }
@@ -147,6 +147,24 @@ nav {
     background-color: rgba(69, 123, 157, 0.7);
     box-shadow: 0 0px 5px 2px rgba(69, 123, 157, 0.4);
     color: #F1FAEE;
+}
+
+@media screen and (max-width: 100vh) {
+    .nav-menu {
+        flex-direction: column;
+        transform: translate(0px, -200vh);
+        height: auto;
+        background-color: rgba(168, 218, 220, 0.9);
+    }
+
+    .nav-menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    #nav-toggle:checked ~ .nav-menu {
+        transform: translateY(0px);
+    }
 }
 
 /* ====================== FOOTER ======================= */
