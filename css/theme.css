@@ -49,6 +49,7 @@ nav {
     align-items: center;
     height: 50px;
     width: 100%;
+    padding-right: 50px;
 }
 
 #nav-toggle:checked nav {
@@ -114,7 +115,7 @@ nav {
     font-size: 1.3em;
     background-color: rgba(168, 218, 220, 0.4);
     margin: 0;
-    padding-left: 50px;
+    padding: 0px 50px;
     position: absolute;
     top: 0px;
     left: 0;
@@ -164,6 +165,20 @@ nav {
 
     #nav-toggle:checked ~ .nav-menu {
         transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 75vh) {
+    * {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
     }
 }
 

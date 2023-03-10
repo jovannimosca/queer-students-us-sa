@@ -59,7 +59,7 @@
 
 .links {
     flex: 1;
-    min-width: 400px;
+    /* min-width: 400px; */
 }
 
 .resources h1 {
@@ -158,6 +158,7 @@ li {
 
     .summary {
         flex: 0;
+        min-width: 0;
     }
 
     .references {

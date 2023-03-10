@@ -73,6 +73,7 @@
     padding: 3rem;
     align-items: end;
     justify-content: flex-end;
+    text-align: right;
 }
 
 .card-contents {
@@ -98,6 +99,6 @@
     .card-heading {
         width: 100%;
         height: auto;
-        min-height: 50vh;
+        min-height: 18rem;
     }
 }

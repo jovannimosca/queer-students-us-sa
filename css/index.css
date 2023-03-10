@@ -65,7 +65,7 @@
 }
 
 .country-label {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .country-contents li {
@@ -82,9 +82,7 @@
     transition: all 0.4s ease;
     cursor: pointer;
     padding: 0.5rem 2rem;
-    /* align-self: flex-start; */
-    /* vertical-align: middle; */
-    /* box-shadow: ; */
+    box-shadow: 0 0 2rem rgba(151, 37, 46, 0.2);
 }
 .country-card button:hover {
     background-color: #e26771;
@@ -115,5 +113,13 @@
 
     .comparison h2 {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 75vh) {
+    .country-card {
+        margin: 3rem;
+        padding: 3rem;
+        min-width: auto;
     }
 }
